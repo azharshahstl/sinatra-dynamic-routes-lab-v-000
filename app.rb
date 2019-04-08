@@ -19,7 +19,7 @@ class App < Sinatra::Base
   
   get '/say/:word1/:word2' do 
     @phrase = []
-    params.each |w| do 
+    params.each_value |w| do 
       @phrase << params[:]
     "#{@phrase}"
   end
