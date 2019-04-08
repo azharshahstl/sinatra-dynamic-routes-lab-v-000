@@ -16,5 +16,10 @@ class App < Sinatra::Base
     @new_string = params[:phrase]*params[:number].to_i
     "#{@new_string}"
   end
+  
+  get '/say/:word1/:word2' do 
+    @phrase = "#{params[:word1]} #{params[:word2]}"
+    "#{@phrase}"
+  end
 
 end
