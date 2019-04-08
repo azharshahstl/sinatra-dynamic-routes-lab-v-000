@@ -21,7 +21,6 @@ class App < Sinatra::Base
     @phrase = []
     params.each_value {|value| @phrase << value} 
     "#{@phrase.join(" ")}."
-    binding.pry
   end
   
   get '/:operation/:number1/:number2' do 
