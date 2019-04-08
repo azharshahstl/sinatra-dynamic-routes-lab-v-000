@@ -17,10 +17,10 @@ class App < Sinatra::Base
     "#{@new_string}"
   end
   
-  get '/say/:word1/:word2' do 
+  get '/say/:word1/:word2/:word3/:word4/:word5' do 
     @phrase = []
-    params.each_value {|value| @phrase <<  
-      @phrase << params[:]
+    params.each_value {|value| @phrase << value} 
+
     "#{@phrase}"
   end
 
