@@ -20,8 +20,8 @@ class App < Sinatra::Base
   get '/say/:word1/:word2/:word3/:word4/:word5' do 
     @phrase = []
     params.each_value {|value| @phrase << value} 
-    @phrase.join(" ")
-    #binding.pry
+    "#{@phrase.join(" ")}."
+    binding.pry
   end
   
   get '/:operation/:number1/:number2' do 
