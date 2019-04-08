@@ -18,7 +18,9 @@ class App < Sinatra::Base
   end
   
   get '/say/:word1/:word2' do 
-    @phrase = "#{params[:word1]} #{params[:word2]}"
+    @phrase = []
+    params.each |w| do 
+      
     "#{@phrase}"
   end
 
