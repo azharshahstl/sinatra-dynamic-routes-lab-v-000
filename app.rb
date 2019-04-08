@@ -38,9 +38,4 @@ class App < Sinatra::Base
       "#{@division}".to_s 
     end
   end
-      
-      
-    
-  end 
-
 end
